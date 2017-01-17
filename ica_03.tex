@@ -1,0 +1,52 @@
+\documentclass[10pt]{article}
+ \usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb,amsfonts,color, titling}
+ \usepackage{listings}
+
+\setlength{\droptitle}{-20mm} 
+
+\usepackage[colorlinks=true,linkcolor=red,urlcolor=blue]{hyperref}
+
+\title{In-class assignment \# 3}
+\author{Brian O'Shea, \\PHY-905-003, Computational Astrophysics and
+  Astrostatistics\\Spring 2017}
+ \date{} % leave blank to have no date
+
+\begin{document}
+ 
+\maketitle
+
+\vspace{-5mm}
+
+\noindent \textbf{Instructions:} We're going to use the functions you
+wrote for the Bisection and Newton's method, as well as some of the
+additional root finding methods in the
+\href{https://docs.scipy.org}{SciPy}
+\href{https://docs.scipy.org/doc/scipy-0.18.1/reference/optimize.html#root-finding}{\texttt{optimize}}
+package (specifically, the methods for scalar functions).
+
+Your goal is straightforward: try to come up with multiple functions
+f(x) that have one or more roots in an interval $[a,b]$ and which
+break one or more of the following methods: the Bisection Method,
+Newton's Method, the Secant Method (which is Newton's method with a
+numerically-computed derivative), and
+\href{http://mathworld.wolfram.com/BrentsMethod.html}{Brent's Method}.
+In this case, ``break'' simply means to force the method to not find
+an existing root in that interval.
+
+Experiment with several functions and all of the methods described
+above.  What are the characteristics of functions or chosen intervals
+$[a,b]$ that tend to break root-finding algorithms?  Are some
+algorithms more robust than others?  Are any of these algorithms
+effectively unbreakable?  Make some notes in \texttt{ANSWERS.md}, and
+we'll also discuss it in class.
+
+\vspace{5mm}
+
+\noindent 
+\textbf{What to turn in:} Turn in \texttt{ANSWERS.md}, any
+source code you wrote, any plots you created (and the scripts you used
+to create them).  \textbf{Do not} turn in object files or
+executables!
+
+\end{document}
